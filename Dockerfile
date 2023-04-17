@@ -15,4 +15,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-RUN npm ci && npm run build --force
+EXPOSE 3000
+CMD [ "npm", "start" ]
