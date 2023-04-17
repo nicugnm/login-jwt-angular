@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+
+  api_service:
+    image: "node:16"
+    build: .
+    restart: "no"
+    command: npm start
+    ports:
+      - 3000:3000
