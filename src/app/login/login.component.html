@@ -1,0 +1,27 @@
+<div class="bg-cyan-600 flex items-center justify-center">
+  <div class="bg-cyan-100 flex">
+    <!-- login form -->
+    <div class="w-1/2 p-5">
+      <h2 class="font-bold text-2xl text-[#002D74]">Login</h2>
+      <p class="mt-2 text-[#002D74]">If you are member, please log in.</p>
+
+      <form (ngSubmit)="onSubmitLogin(f)" class="flex flex-col gap-4 mt-2" action="" #f="ngForm">
+        <input class="mt-2 p-2 rounded-xl border" type="text" ngModel name="email" required placeholder="Email">
+        <input class="mt-2 p-2 rounded-xl border" type="password" ngModel name="password" required placeholder="Password">
+        <button class="bg-[#002D74] rounded-xl text-white mt-2 p-2">Login</button>
+      </form>
+
+      <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
+        <hr class="border-gray-500">
+        <p class="text-center">OR</p>
+        <hr class="border-gray-500">
+      </div>
+    </div>
+
+    <!-- img -->
+    <div class="w-1/2 p-5">
+      <img class="rounded-2xl" ngSrc="assets/login-form-pic.png" alt="" height="2831" width="1887">
+    </div>
+
+  </div>
+</div>
